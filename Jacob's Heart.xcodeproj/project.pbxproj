@@ -12,6 +12,9 @@
 		724913502139B0E600F04B00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7249134E2139B0E600F04B00 /* Main.storyboard */; };
 		724913522139B0EB00F04B00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 724913512139B0EB00F04B00 /* Assets.xcassets */; };
 		724913552139B0EB00F04B00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 724913532139B0EB00F04B00 /* LaunchScreen.storyboard */; };
+		728EEDC82140955A00DEA7FD /* eventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728EEDC72140955A00DEA7FD /* eventsViewController.swift */; };
+		728EEDCA214097AD00DEA7FD /* donateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728EEDC9214097AD00DEA7FD /* donateViewController.swift */; };
+		728EEDCC2140A0D500DEA7FD /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728EEDCB2140A0D500DEA7FD /* loginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		724913512139B0EB00F04B00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		724913542139B0EB00F04B00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		724913562139B0EB00F04B00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		728EEDC72140955A00DEA7FD /* eventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventsViewController.swift; sourceTree = "<group>"; };
+		728EEDC9214097AD00DEA7FD /* donateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = donateViewController.swift; sourceTree = "<group>"; };
+		728EEDCB2140A0D500DEA7FD /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,9 @@
 				7249134A2139B0E600F04B00 /* AppDelegate.swift */,
 				7249134C2139B0E600F04B00 /* ViewController.swift */,
 				7249134E2139B0E600F04B00 /* Main.storyboard */,
+				728EEDCB2140A0D500DEA7FD /* loginViewController.swift */,
+				728EEDC9214097AD00DEA7FD /* donateViewController.swift */,
+				728EEDC72140955A00DEA7FD /* eventsViewController.swift */,
 				724913512139B0EB00F04B00 /* Assets.xcassets */,
 				724913532139B0EB00F04B00 /* LaunchScreen.storyboard */,
 				724913562139B0EB00F04B00 /* Info.plist */,
@@ -136,7 +145,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7249134D2139B0E600F04B00 /* ViewController.swift in Sources */,
+				728EEDC82140955A00DEA7FD /* eventsViewController.swift in Sources */,
 				7249134B2139B0E600F04B00 /* AppDelegate.swift in Sources */,
+				728EEDCA214097AD00DEA7FD /* donateViewController.swift in Sources */,
+				728EEDCC2140A0D500DEA7FD /* loginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +293,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X7DPT956Y2;
 				INFOPLIST_FILE = "Jacob's Heart/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -298,6 +311,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X7DPT956Y2;
 				INFOPLIST_FILE = "Jacob's Heart/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
