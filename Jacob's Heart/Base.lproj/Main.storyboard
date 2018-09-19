@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,8 +14,8 @@
         <scene sceneID="6K4-C7-H5v">
             <objects>
                 <viewController title="Family login" id="xnb-ux-C2c" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="owe-Kp-FDo">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="owe-Kp-FDo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Username" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DT9-yp-cCo">
@@ -26,17 +26,17 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WsD-0z-8T2">
-                                <rect key="frame" x="139" y="241" width="97" height="30"/>
+                                <rect key="frame" x="139" y="310" width="97" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRn-mH-6a4">
-                                <rect key="frame" x="168.5" y="389" width="38" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRn-mH-6a4">
+                                <rect key="frame" x="168.5" y="458" width="38" height="30"/>
                                 <state key="normal" title="Login"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kLS-wP-6NI">
-                                <rect key="frame" x="31" y="50" width="34" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kLS-wP-6NI">
+                                <rect key="frame" x="31" y="50" width="34" height="99"/>
                                 <color key="backgroundColor" red="0.17838108539581299" green="0.12604653835296631" blue="0.4640318751335144" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
@@ -69,51 +69,72 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" userLabel="home" customClass="ViewController" customModule="Jacob_s_Heart" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nos-ql-1EM">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="128"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="8jg-F4-k3m">
-                                        <rect key="frame" x="37" y="84" width="301" height="84"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cer-Pd-baT" userLabel="menu">
+                                        <rect key="frame" x="0.0" y="28" width="75" height="92"/>
+                                        <state key="normal" image="Menue"/>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="AG9-5Q-jj3">
+                                        <rect key="frame" x="46" y="40" width="287" height="69"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.69612759351730347" green="0.19612929224967957" blue="0.12837371230125427" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="8jg-F4-k3m" firstAttribute="top" secondItem="Nos-ql-1EM" secondAttribute="top" constant="84" id="SJ0-eN-QAN"/>
-                                    <constraint firstItem="8jg-F4-k3m" firstAttribute="centerX" secondItem="Nos-ql-1EM" secondAttribute="centerX" id="god-lb-KYH"/>
+                                    <constraint firstItem="cer-Pd-baT" firstAttribute="baseline" secondItem="AG9-5Q-jj3" secondAttribute="baseline" id="nJU-PF-Wtn"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTs-Ri-DCR">
-                                <rect key="frame" x="164.5" y="318.5" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTs-Ri-DCR">
+                                <rect key="frame" x="137" y="353" width="46" height="30"/>
                                 <state key="normal" title="Events"/>
                                 <connections>
                                     <segue destination="SxA-Yd-2be" kind="presentation" modalTransitionStyle="crossDissolve" id="wyT-8J-7v9"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jnk-SQ-aTc">
-                                <rect key="frame" x="162.5" y="405" width="50" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jnk-SQ-aTc">
+                                <rect key="frame" x="135" y="439.66666666666674" width="50" height="64.333333333333314"/>
                                 <state key="normal" title="Donate"/>
                                 <connections>
                                     <segue destination="HDD-wa-a9g" kind="presentation" modalTransitionStyle="crossDissolve" id="4sJ-g8-dGc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plW-8y-GDC">
-                                <rect key="frame" x="147" y="491.5" width="81" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plW-8y-GDC">
+                                <rect key="frame" x="142" y="500" width="90" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="SkM-kY-GF6"/>
+                                    <constraint firstAttribute="height" constant="30" id="qzo-vi-WYZ"/>
+                                </constraints>
                                 <state key="normal" title="Family login"/>
                                 <connections>
                                     <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="md7-kB-YgF"/>
                                     <segue destination="xnb-ux-C2c" kind="presentation" identifier="login" modalTransitionStyle="crossDissolve" id="u4Y-7m-ilV"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cd5-ey-NGA" userLabel="Footer">
+                                <rect key="frame" x="0.0" y="584" width="375" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Follow Us!" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="apV-jk-64W">
+                                        <rect key="frame" x="44" y="26" width="97" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.98264914751052856" green="0.96302610635757446" blue="0.91985046863555908" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.98264914751052856" green="0.96302610635757446" blue="0.91985046863555908" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.93513286113739014" green="0.92958933115005493" blue="0.68926876783370972" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.94499808549880981" green="0.89328330755233765" blue="0.76795315742492676" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="aTs-Ri-DCR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="96Z-sI-lcc"/>
                             <constraint firstItem="Jnk-SQ-aTc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9TK-Yf-hYQ"/>
-                            <constraint firstItem="plW-8y-GDC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BWl-mA-b9i"/>
                             <constraint firstItem="Jnk-SQ-aTc" firstAttribute="top" secondItem="aTs-Ri-DCR" secondAttribute="bottom" constant="56.5" id="DDC-q6-XBi"/>
                             <constraint firstItem="Nos-ql-1EM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="FPd-nT-mYI"/>
                             <constraint firstItem="aTs-Ri-DCR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Kjl-Dz-sSg"/>
@@ -121,7 +142,6 @@
                             <constraint firstAttribute="trailing" secondItem="Nos-ql-1EM" secondAttribute="trailing" id="Ryr-aI-sU5"/>
                             <constraint firstItem="Nos-ql-1EM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ech-oH-IaH"/>
                             <constraint firstItem="Nos-ql-1EM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gpr-WK-s62"/>
-                            <constraint firstItem="plW-8y-GDC" firstAttribute="top" secondItem="Jnk-SQ-aTc" secondAttribute="bottom" constant="56.5" id="nHa-xN-oRy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -131,18 +151,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.799999999999997" y="33.733133433283363"/>
+            <point key="canvasLocation" x="31.875" y="32.5"/>
         </scene>
         <!--Donate-->
         <scene sceneID="tSu-2f-FTO">
             <objects>
                 <viewController title="Donate" id="HDD-wa-a9g" customClass="donateViewController" customModule="Jacob_s_Heart" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pkp-0P-KJc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r17-OF-8uy">
-                                <rect key="frame" x="170.5" y="318.5" width="34" height="30"/>
+                                <rect key="frame" x="143" y="225" width="34" height="30"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="crossDissolve" id="Jv6-KE-6ra"/>
@@ -176,11 +196,11 @@
             <objects>
                 <viewController title="Events" id="SxA-Yd-2be" customClass="eventsViewController" customModule="Jacob_s_Heart" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dcc-1k-865">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qBO-0w-TrF">
-                                <rect key="frame" x="170.5" y="318.5" width="34" height="30"/>
+                                <rect key="frame" x="143" y="225" width="34" height="30"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="crossDissolve" id="3wL-jx-vrR"/>
@@ -201,6 +221,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Menue" width="100" height="100"/>
         <image name="logo" width="301" height="84"/>
     </resources>
     <inferredMetricsTieBreakers>
